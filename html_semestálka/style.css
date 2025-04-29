@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url(pleso1.jpg);
+}
+
+p{
+    line-height: 2em; /* výška riadkovania */
+}
+
+header .lavy a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;   /* medzera medzi ikonu a emailom/tel č. */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header .pravy a{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px; /* medzera medzi pravym okrajom a instagramu */
+    margin: 5px; /* medzera medzi ikonu a ing */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+header ul{
+    display: flex;
+    gap: 20px; /* medzera medzi email a tel č. */
+    list-style: none;
+    padding-left: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #777;
+    padding: 8px;    
+}
+
+.pravy{
+    padding-right: 10px; /* medzera medzi lavým okrajom Instagramu aby bol zároven s MENU */
+}
+
+.Hlmenu{
+    position: sticky;
+    top: 0px;
+    z-index: 999; /* to je ako sa na seba nasklada ten text a obrazky */
+}
+
+.menu{
+    background-color: white;
+    padding: 7px 25px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.pravemenu{
+    width: 60%; /* širka divu/širka toho pravého divu*/
+}
+
+.pravemenu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+
+.pravemenu a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;  /* velkost oznaceného menu */
+}
+
+.pravemenu a:hover{ /* zvyraznenie myšky na menu */
+    background-color: rgb(218, 218, 218);  
+    border-radius: 20px;
+}
+
+.logo{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.logo h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px 0px;
+    transform: translate(-50%,-50%); /* ten div transformujem/ translate=posunuť */
+    color: rgba(150, 150, 150, 0.9);
+    border: 6px solid rgba(80, 80, 80, 0.5);
+}
+
+.logo a{
+    color: inherit; /* inherit-zdediť od rodicovskeho komponentu */
+    width: 100%;
+    height: 100%;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+
+.logo h1:hover{
+    border-color: rgb(218, 218, 218);  
+    color: rgb(218, 218, 218);  
+}
+
+.text{
+    color: aliceblue;
+    text-align: center;
+    padding: 60px;
+    font-size: xx-large;
+}
+
+.hlavnemesto h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.hlavnemesto{
+    color: aliceblue;
+    padding-left: 50px;
+    margin-right: 50%;
+    font-size: medium;
+}
+
+.Zilina h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.Zilina{
+    color: aliceblue;
+    padding-right: 50px;
+    margin-left: 50%;
+    font-size: medium;
+}
+
+.chko h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: xx-large;
+    margin-top: 40px;
+}
+
+.tabulka{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    width: 98%;
+    height: 100%;
+    text-align: center;
+    color: aliceblue;
+    margin-left: 1%;
+    opacity: 70%;
+}
+
+.tabulka th{
+    font-size: x-large;
+}
+
+.tabulka td{
+    font-size: larger;
+}
+
+.hlavickatabulky{
+    background-color: #777;
+}
+
+.tabulka tr td{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    background-color: #777;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    gap: 30%;
+}
+
+.bratislavkyhrad h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.bratislavkyhrad{
+    color: aliceblue;
+    font-size: medium;
+    margin-right: 20px;
+    
+}
+
+.bratislavkyhrad img{
+    width: 70%;
+    height: 30%;
+    margin-left: 15%;
+}
+
+.oravskyhrad h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.oravskyhrad{
+    color: aliceblue;
+    font-size: medium;
+    margin-right: 30px;
+}
+
+.oravskyhrad img{
+    width: 70%; 
+    height: 30%; 
+    padding-left: 15%;
+}
+
+.hrady{
+    display: flex;
+    margin-left: 30px;
+}
+
+.bojnickyzamok h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.bojnickyzamok{
+    color: aliceblue;
+    padding-left: 50px;
+    margin-right: 50%;
+    font-size: medium;
+}
+
+.szbanskastiavnica h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.szbanskastiavnica{
+    color: aliceblue;
+    padding-right: 50px;
+    margin-left: 50%;
+    font-size: medium;
+}
+
+.bojnickyzamok img{
+    position: absolute;
+    top: 110px;
+    right: 100px;
+    /* width: 30%;  */
+    height: 40%;   
+}
+
+.szbanskastiavnica img{
+    position: absolute;
+    top: 570px;
+    left: 100px;
+    /* width: 40%;  */
+    height: 40%;  
+}
+
+
+.jaskyne h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.jaskyne{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.vysoketatry{
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+.vysoketatry h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.slovenskyraj{
+    color: aliceblue;
+    margin-left: 20px;
+}
+
+.slovenskyraj h1{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.vysoketatry img{
+    width: 50%; 
+    position: relative;
+    left: 25%;
+    bottom: 100px;
+}
+
+.slovenskyraj img{
+    width: 50%; 
+    position: relative;
+    left: 25%;
+    bottom: 120px;
+}
+
+.viac h1{
+    position: absolute;
+    color: rgba(150, 150, 150, 0.9);
+    border: 6px solid rgba(80, 80, 80, 0.5);
+}
+
+.viac a{
+    color: inherit; /* inherit-zdediť od rodicovskeho komponentu */
+    text-decoration: none;
+}
+
+.viac h1:hover{
+    border-color: rgb(218, 218, 218);  
+    color: rgb(218, 218, 218);  
+}
+
+.formularlogo{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.formularlogo h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 15px 0px;
+    transform: translate(-50%,-50%); /* ten div transformujem/ translate=posunuť */
+    color: rgba(150, 150, 150, 0.9);
+    border: 6px solid rgba(80, 80, 80, 0.5);
+}
+
+.formularlogo a{
+    color: inherit; /* inherit-zdediť od rodicovskeho komponentu */
+    width: 100%;
+    height: 100%;
+    padding: 15px 40px;
+    text-decoration: none;
+}
+
+.formularlogo h1:hover{
+    border-color: rgb(218, 218, 218);  
+    color: rgb(218, 218, 218);  
+}
+
+.formular{
+    padding-left: 42%;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    color: rgba(150, 150, 150, 0.9);
+}
+
+.formular h2{
+    color: aliceblue;
+    padding-left: 5px;
+    font-size: xx-large;
+}
+
+.formular p{
+    font-size: 20px;
+}
+
+.formular input{
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.formular label{
+    font-size: 16px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.rozbal{
+    padding-left: 35%;
+}
+
+#panel, #flip {
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    border: solid 3px #777;
+    }
+
+    #panel {
+    width: 50%;
+    padding: 5px;
+    display: none;
+    }
+
+.formular .invalid{
+    border: 1px solid red;
+}
+
+.vypis-recenzii {
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.recenzia {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.recenzia h3 {
+    margin-top: 0;
+}
+
+.recenzia p {
+    margin: 5px 0;
+}
+
+.vypis-recenzii h2{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    font-size: xx-large;
+}
